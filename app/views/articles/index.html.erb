@@ -1,0 +1,11 @@
+<h1>All list</h1>
+
+<div class="container">
+  <% @articles.each do |article|%>
+    <div class="card">
+      <i class="fa-regular fa-star"></i>
+      <h1><%= article.title %></h1>
+      <p><%= article.content %></p>
+    </div>
+  <% end %>
+</div>
